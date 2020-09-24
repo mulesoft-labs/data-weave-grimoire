@@ -1,4 +1,4 @@
-*Hello Wise Wizard. Welcome to the magic land of DW.*
+#Hello Wise Wizard. Welcome to the magic land of DW.
 
 This Grimore contains a collection of interesting DataWeave spells that can be executed with our CLI.
 
