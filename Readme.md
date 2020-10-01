@@ -6,8 +6,10 @@ You can create your own grimore and be part of the DataWeave Wizard's Secret Clu
 
 ## How to create a SPELL
 
+- wizard-name = Github User Name
+
 All you need is 
- - A repo *${github-user-name}*-data-weave-grimoire
+ - A repo `*<wizard-name>*-data-weave-grimoire`
  - A folder that is going to be your spell name i.e HelloWorld/
  - Then a file Main.dwl that needs to be under <spell_name>/src/Main.dwl in our case HelloWorld/src/Main.dwl
  - And then write your script inside Main.dwl for example:
