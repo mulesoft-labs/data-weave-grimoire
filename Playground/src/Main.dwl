@@ -11,7 +11,6 @@ import run, ReaderInput,RunSuccess,ExecutionFailure from dw::Runtime
 import dw::core::Binaries
 
 var serverConfig: {host: String, port: Number} = { host: "localhost", port: 8082 }
-var LOCALHOST = '$(serverConfig.host):$(serverConfig.port)'
 
 fun runTransform(transformRequest: PlaygroundAPI::TransformRequest): PlaygroundAPI::TransformResponse = do {
     var inputs: Dictionary<ReaderInput> = {
