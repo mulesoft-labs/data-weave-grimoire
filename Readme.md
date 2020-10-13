@@ -21,3 +21,10 @@ All you need is
 
 
 Then you go to your command line and type `dw --spell <wizard-name>/HelloWorld`
+
+## How to test Spells locally before pushing to a repo
+
+Just run your dwl script with:
+```
+dw -f <path_to_main_script>
+```
