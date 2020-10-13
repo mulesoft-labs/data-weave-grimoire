@@ -1,8 +1,8 @@
 # Hello Wise Wizard. Welcome to the magic land of DW.
 
-This Grimore contains a collection of interesting DataWeave spells that can be executed with our CLI.
+This Grimore contains a collection of interesting DataWeave spells that can be executed with [our CLI](https://github.com/mulesoft-labs/data-weave-native).
 
-You can create your own grimore and be part of the DataWeave Wizard's Secret Club.
+You can create your own grimore and be part of the DataWeave Wizards Secret Club.
 
 ## How to create a SPELL
 
