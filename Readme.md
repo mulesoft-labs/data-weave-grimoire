@@ -22,6 +22,8 @@ All you need is
 
 Then you go to your command line and type `dw --spell <wizard-name>/HelloWorld`
 
+### WARNING: Do NOT execute spells you don't trust
+
 ## How to test Spells locally before pushing to a repo
 
 Just run your dwl script with:
