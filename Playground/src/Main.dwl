@@ -3,7 +3,7 @@
 input payload application/json
 
 @ResourceDependency(url = "https://github.com/mulesoft-labs/data-weave-playground-ui/releases/download/v0.1/api-0.1-SNAPSHOT-api.zip", unzip=true)
-@ResourceDependency(url = "https://github.com/mulesoft-labs/data-weave-playground-ui/releases/download/v0.1/dw-playground-0.1.zip", unzip=true)
+@ResourceDependency(url = "file:///Users/mdeachaval/labs/mulesoft-labs/data-weave-playground-ui/frontend/dist/dw-playground-0.1.zip", unzip=true)
 import * from dw::deps::Deps
 import * from dw::io::http::Server
 import raml!playground::api::dwplayground as PlaygroundAPI
@@ -22,6 +22,7 @@ fun runTransform(transformRequest: PlaygroundAPI::TransformRequest): PlaygroundA
                         }
                     )
                  }
+                 
 
     ---
     run(transformRequest.main,transformRequest.fs, inputs)  match {
@@ -35,7 +36,7 @@ fun runTransform(transformRequest: PlaygroundAPI::TransformRequest): PlaygroundA
     		   }
     		}
     		case is ExecutionFailure -> {
-    		    success: true,
+    		    success: false,
     		    error: {
     		        message: $.message,
     		        location: $.location,
