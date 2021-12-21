@@ -12,7 +12,7 @@ import * from dw::io::http::Server
 import run, ReaderInput,RunSuccess,ExecutionFailure from dw::Runtime
 import dw::core::Binaries
 
-var serverConfig: {host: String, port: Number} = { host: "localhost", port: 8082 }
+var serverConfig: {host: String, port: Number} = { host: "localhost", port: 8081 }
 
 fun runTransform(transformRequest) = do {
     var inputs: Dictionary<ReaderInput> = {
@@ -27,7 +27,7 @@ fun runTransform(transformRequest) = do {
                  
 
     ---
-    run(transformRequest.main,transformRequest.fs, inputs)  match {
+    run(transformRequest.main,transformRequest.fs, log(inputs))  match {
     		case is RunSuccess -> {
     		   success: true,
     		   result: {
