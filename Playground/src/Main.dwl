@@ -2,8 +2,8 @@
 
 input payload application/json
 
-// @ResourceDependency(url = "file:///Users/mdeachaval/labs/mulesoft-labs/data-weave-playground-ui/frontend/dist/dw-playground-0.2.zip", unzip=true)
-@ResourceDependency(url = "https://github.com/mulesoft-labs/data-weave-playground-ui/releases/download/v0.2/dw-playground-0.2.zip", unzip=true)
+// @ResourceDependency(url = "file:///Users/mdeachaval/labs/mulesoft-labs/data-weave-playground-ui/frontend/dist/dw-playground-0.3.zip", unzip=true)
+@ResourceDependency(url = "https://github.com/mulesoft-labs/data-weave-playground-ui/releases/download/v0.3/dw-playground-0.3.zip", unzip=true)
 import * from dw::deps::Deps
 import * from dw::core::Objects
 import CORS from dw::io::http::Interceptors
@@ -27,7 +27,7 @@ fun runTransform(transformRequest) = do {
                  
 
     ---
-    run(transformRequest.main,transformRequest.fs, log(inputs))  match {
+    run(transformRequest.main,transformRequest.fs, inputs)  match {
     		case is RunSuccess -> {
     		   success: true,
     		   result: {
