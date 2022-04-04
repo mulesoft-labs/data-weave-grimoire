@@ -10,5 +10,11 @@
 *.iws
 *.idea
 
+# VSCode files
+.vscode
+
+# Metals files
+.metals
+
 # Mac
 .DS_Store
