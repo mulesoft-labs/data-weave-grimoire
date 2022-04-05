@@ -21,6 +21,8 @@ A `spell` is a very simple way to distribute and share a DataWeave transformatio
 
 A `spell` is just executables scripts that can be called from the command-line using the `spell` name.
 
+## DataWeave Grimoire
+
 DataWeave Grimoire is the default grimoire provided by DataWeave CLI.
 
 This grimoire contains the following spells:
