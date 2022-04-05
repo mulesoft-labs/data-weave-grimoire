@@ -16,8 +16,6 @@ A `grimoire` is a collection of `spells` from a given `wizard`.
 ## Spells
 A `spells` are just executables scripts that can be called from the command-line using the `spell` name.
 
-:warning: **Do NOT execute spells you don't trust**: Be very careful here!
-
 ### How to Add a Wizard
 
 In order to add a new `wizard` use the DataWeave CLI
@@ -27,6 +25,8 @@ dw --add-wizard <wizard_name>
 ```
 The wizard grimoire is going to be cloned at `{user.home}/.dw/grimoires`
 
+:warning: **Do NOT add a wizard you don't trust**
+
 ### How to Run a Spell
 
 The following command shows how to run a spell using tge DataWeave CLI 
@@ -34,64 +34,50 @@ The following command shows how to run a spell using tge DataWeave CLI
 dw --spell <spell_name>
 ```
 
-### How to Create a Spell
+:warning: **Do NOT execute spells you don't trust**
 
-- wizard_name = GitHub User Name
-
-All you need is 
- - A repo `<wizard_name>-data-weave-grimoire`
- - A folder that is going to be your spell name i.e `HelloWorld/`
- - Then a file `Main.dwl` that needs to be under `<spell_name>/src/Main.dwl` in our case `HelloWorld/src/Main.dwl`.
- - And then write your script inside Main.dwl for example:
-
-```
-  %dw 2.0
-  ---
-  "Hi Wise Wizard" 
-```
-
-Then you go to your command-line and type:
-```bash
-dw --spell <wizard_name>/HelloWorld
-```
-
-
-
-
-## Become a DataWeave wizard
+## Becoming a DataWeave Wizard
 
 ### Step 1: Create the GitHub Repository
 
-In order to become a wizard first create your GitHub repository
+In order to become a `wizard` first create your GitHub repository
 
-`https://github.com/${wizard_name}/${wizard_name}-data-weave-grimoire`
+```bash
+https://github.com/${wizard_name}/${wizard_name}-data-weave-grimoire
+```
 
 Your wizard name is going to be your GitHub user id
 
 ### Step 2: Clone GitHub Repository
 
-`git clone https://github.com/${wizard_name}/${wizard_name}-data-weave-grimoire`
+```bash
+git clone https://github.com/${wizard_name}/${wizard_name}-data-weave-grimoire
+```
 
 ### Step 3: Create a Spell
 
-Inside your cloned repo run
+Inside your cloned repository run
 
-`dw --new-spell <spellName>`
+``bash
+dw --new-spell <spell_name>
+```
 
 ### Step 3: Edit Your Spell
 
 Using VSCode and with the vscode plugin
 
-`code <spellName>`
+```bash
+code <spell_name>
+```
 
 ### Step 4: Try it out
 
 In order to test a local spell you can use
 
-`dw --local-spell ./<spellName>`
-
-Or you if you want to use a live coding XP you can use the `--eval` flag that it will re-run the spell on every save
+```bash
+dw --local-spell ./<spell_name>
+```
 
 ### Step 5: Push It and Distribute
 
-Once your spell is finished push it to your repo and tell your friends to try it out.
+Once your spell is finished push it to your repository and tell your friends to try it out.
