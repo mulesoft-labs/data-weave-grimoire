@@ -6,16 +6,17 @@ You can create your own grimoire and be part of the DataWeave Wizards Secret Clu
 
 Let's start defining some concepts:
 
-### Wizard
+## Wizard
 A `wizard` is just a name that we trust and we want to have all their `spells` available.
 
 A `wizard` has a `grimoire`, a GitHub repository that is inferred by `https://github.com/${wizard_name}/${wizard_name}-data-weave-grimoire`, that includes all the `spells` from this `wizard`.
 
-### Grimoire
+## Grimoire
 
 A `grimoire` is a collection of `spells` from a given `wizard`. 
 
 ## Spells
+
 A `spell` is a very simple way to distribute and share a DataWeave transformation.
 
 A `spell` is just executables scripts that can be called from the command-line using the `spell` name.
@@ -30,7 +31,7 @@ This grimoire contains the following spells:
 | CountWizards | Spell to find other DataWeave wizards.                             |
 | Playground   | This spell will launch the playground UI.                          |
 
-### How to Add a Wizard
+## How to Add a Wizard
 
 In order to add a new `wizard` use the DataWeave CLI
 
@@ -41,7 +42,7 @@ The wizard grimoire is going to be cloned at `{user.home}/.dw/grimoires`
 
 :warning: **Do NOT add a wizard you don't trust**
 
-### Listing All the Available Spells
+## Listing All the Available Spells
 
 Using the `--list-spells` it will show all the available spells for each wizard with the documentation of each spell.
 
@@ -49,26 +50,25 @@ Using the `--list-spells` it will show all the available spells for each wizard 
 dw --list-spells
 ```
 
-### How to Run a Spell
+## How to Run a Spell
 
 There are several ways to run a spell using the DataWeave CLI.
 
 :warning: **Do NOT execute spells you don't trust**
 
-
-#### Running a Spell From a Wizard
+### Running a Spell From a Wizard
 
 ```bash
 dw --spell <wizard_name>/<spell_name>
 ```
 
-#### Running a Spell From the DataWeave Grimoire
+### Running a Spell From the DataWeave Grimoire
 
 ```bash
 dw --spell <spell_name>
 ```
 
-#### Running a Spell From a Grimoire a Local Folder
+### Running a Spell From a Grimoire a Local Folder
 
 ```bash
 dw --local-spell <spell_name>
@@ -115,7 +115,6 @@ dw --local-spell <spell_name>
 ### Step 5: Push It and Distribute
 
 Once your spell is finished push it to your repository and tell your friends to try it out.
-
 
 ## Running the DataWeave Playground Locally
 
