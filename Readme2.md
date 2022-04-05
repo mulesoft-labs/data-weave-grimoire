@@ -1,13 +1,15 @@
 # Hello Wise Wizard. Welcome to the magic land of DataWeave.
 
-This grimoire contains a collection of interesting DataWeave spells that can be executed with [our DataWeave CLI](https://github.com/mulesoft-labs/data-weave-native).
+This grimoire contains a collection of interesting DataWeave spells that can be executed with our [DataWeave CLI](https://github.com/mulesoft-labs/data-weave-native).
 
 You can create your own grimoire and be part of the DataWeave Wizards Secret Club.
 
-## Wizard, Grimoires and Spells
+Let's start defining some concepts:
 
 ### Wizard
 A `wizard` is just a name that we trust and we want to have all their `spells` available.
+
+A `wizard` has a `grimoire`, a GitHub repository that is inferred by `https://github.com/${wizard_name}/${wizard_name}-data-weave-grimoire`, that includes all the `spells` from this `wizard`.
 
 ### Grimoire
 
@@ -15,6 +17,18 @@ A `grimoire` is a collection of `spells` from a given `wizard`.
 
 ## Spells
 A `spells` are just executables scripts that can be called from the command-line using the `spell` name.
+
+A `spell` is a very simple way to distribute and share a DataWeave transformation.
+
+DataWeave Grimoire is the default grimoire provided by DataWeave CLI.
+
+This grimoire contains the following spells:
+
+| Spell        | Description                                                        |
+|--------------|--------------------------------------------------------------------|
+| HelloWizard  | Just a simple example that shows how to create a very basic spell. |
+| CountWizards | Spell to find other DataWeave wizards.                             |
+| Playground   | This spell will launch the playground UI.                          |
 
 ### How to Add a Wizard
 
@@ -27,14 +41,37 @@ The wizard grimoire is going to be cloned at `{user.home}/.dw/grimoires`
 
 :warning: **Do NOT add a wizard you don't trust**
 
+
+### Listing All the Available Spells
+
+Using the `--list-spells` it will show all the available spells for each wizard with the documentation of each spell.
+
+```bash
+dw --list-spells
+```
+
 ### How to Run a Spell
 
-The following command shows how to run a spell using tge DataWeave CLI 
+The following command shows how to run a spell using the DataWeave CLI 
+
 ```bash
-dw --spell <spell_name>
+dw --spell <wizard_name>/<spell_name>
 ```
 
 :warning: **Do NOT execute spells you don't trust**
+
+
+#### Running the DataWeave Playground Locally
+
+The following example shows how run a DataWeave Playground locally:
+
+```bash 
+dw --eval --spell Playground
+```
+
+It is going to execute the `Playground` spell that is going to be located in
+
+`{user.home}/.dw/grimoires/data-weave-grimoire/Playground/src/Main.dwl`
 
 ## Becoming a DataWeave Wizard
 
@@ -58,24 +95,20 @@ git clone https://github.com/${wizard_name}/${wizard_name}-data-weave-grimoire
 
 Inside your cloned repository run
 
-``bash
+```bash
 dw --new-spell <spell_name>
 ```
 
 ### Step 3: Edit Your Spell
 
-Using VSCode and with the vscode plugin
-
-```bash
-code <spell_name>
-```
+Use [DataWeave VSCode Plugin](https://marketplace.visualstudio.com/items?itemName=MuleSoftInc.dataweave) to develop your script.
 
 ### Step 4: Try it out
 
 In order to test a local spell you can use
 
 ```bash
-dw --local-spell ./<spell_name>
+dw --local-spell <spell_name>
 ```
 
 ### Step 5: Push It and Distribute
