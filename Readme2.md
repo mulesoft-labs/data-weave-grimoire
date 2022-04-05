@@ -16,9 +16,9 @@ A `wizard` has a `grimoire`, a GitHub repository that is inferred by `https://gi
 A `grimoire` is a collection of `spells` from a given `wizard`. 
 
 ## Spells
-A `spells` are just executables scripts that can be called from the command-line using the `spell` name.
-
 A `spell` is a very simple way to distribute and share a DataWeave transformation.
+
+A `spell` is just executables scripts that can be called from the command-line using the `spell` name.
 
 DataWeave Grimoire is the default grimoire provided by DataWeave CLI.
 
@@ -41,7 +41,6 @@ The wizard grimoire is going to be cloned at `{user.home}/.dw/grimoires`
 
 :warning: **Do NOT add a wizard you don't trust**
 
-
 ### Listing All the Available Spells
 
 Using the `--list-spells` it will show all the available spells for each wizard with the documentation of each spell.
@@ -52,26 +51,28 @@ dw --list-spells
 
 ### How to Run a Spell
 
-The following command shows how to run a spell using the DataWeave CLI 
+There are several ways to run a spell using the DataWeave CLI.
+
+:warning: **Do NOT execute spells you don't trust**
+
+
+#### Running a Spell From a Wizard
 
 ```bash
 dw --spell <wizard_name>/<spell_name>
 ```
 
-:warning: **Do NOT execute spells you don't trust**
+#### Running a Spell From the DataWeave Grimoire
 
-
-#### Running the DataWeave Playground Locally
-
-The following example shows how run a DataWeave Playground locally:
-
-```bash 
-dw --eval --spell Playground
+```bash
+dw --spell <spell_name>
 ```
 
-It is going to execute the `Playground` spell that is going to be located in
+#### Running a Spell From a Grimoire a Local Folder
 
-`{user.home}/.dw/grimoires/data-weave-grimoire/Playground/src/Main.dwl`
+```bash
+dw --local-spell <spell_name>
+```
 
 ## Becoming a DataWeave Wizard
 
@@ -114,3 +115,14 @@ dw --local-spell <spell_name>
 ### Step 5: Push It and Distribute
 
 Once your spell is finished push it to your repository and tell your friends to try it out.
+
+
+## Running the DataWeave Playground Locally
+
+The following example shows how run a DataWeave Playground locally:
+
+```bash 
+dw --eval --spell Playground
+```
+
+It is going to execute the `Playground` spell that is going to be located in `{user.home}/.dw/grimoires/data-weave-grimoire/Playground/src/Main.dwl`
