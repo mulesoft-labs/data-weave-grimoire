@@ -23,7 +23,7 @@ A `spell` is just an executable script that can be called from the command line 
 
 ## DataWeave Grimoire
 
-DataWeave Grimoire is the default grimoire provided by DataWeave CLI.
+The DataWeave Grimoire is the default grimoire provided by the DataWeave CLI.
 
 This grimoire contains the following spells:
 
