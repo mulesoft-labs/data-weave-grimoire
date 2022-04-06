@@ -13,13 +13,12 @@ A `wizard` has a `grimoire`, a GitHub repository that is inferred by `https://gi
 
 ## Grimoire
 
-A `grimoire` is a collection of `spells` from a given `wizard`. 
+A `grimoire` is a collection of `spells` created by a `wizard`. The `grimoire` is hosted in a GitHub repository in the default branch. Currently, there is no support for versioning or branching scheme.
 
 ## Spells
 
-A `spell` is a very simple way to distribute and share a DataWeave transformation.
-
-A `spell` is just an executable script that can be called from the command line using the `spell`'s name.
+A `spell` is a DataWeave application that contains one or more DataWeave transformations (entry points) and is hosted in a GitHub repository. 
+This makes it very easy to share and distribute across other `wizards` (users).
 
 ## DataWeave Grimoire
 
