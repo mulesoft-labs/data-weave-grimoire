@@ -78,7 +78,7 @@ dw --local-spell <spell_name>
 
 ## Becoming a DataWeave Wizard
 
-### Step 1: Create the GitHub Repository
+### Step 1: Create Your GitHub Repository
 
 In order to become a `wizard` first create your GitHub repository
 
