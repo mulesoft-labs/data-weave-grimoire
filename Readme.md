@@ -7,7 +7,7 @@ You can create your own grimoire and be part of the DataWeave Wizards Secret Clu
 Let's start defining some concepts:
 
 ## Wizard
-A `wizard` is just a name that we trust and we want to have all their `spells` available.
+A `wizard` is just a user that we trust and we want to have all their `spells` available.
 
 A `wizard` has a `grimoire`, a GitHub repository that is inferred by `https://github.com/${wizard_name}/${wizard_name}-data-weave-grimoire`, that includes all the `spells` from this `wizard`.
 
