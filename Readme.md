@@ -63,6 +63,7 @@ There are several ways to run a spell using the DataWeave CLI.
 ```bash
 dw --spell <wizard_name>/<spell_name>
 ```
+The above command runs the spell located at `{user.home}/.dw/grimoires/<wizard_name>-grimoire/<spell_name>/src/Main.dwl`
 
 ### Running a Spell From the DataWeave Grimoire
 
@@ -70,11 +71,15 @@ dw --spell <wizard_name>/<spell_name>
 dw --spell <spell_name>
 ```
 
-### Running a Spell From a Grimoire a Local Folder
+The above command runs the spell located at `{user.home}/.dw/grimoires/data-weave-grimoire/<spell_name>/src/Main.dwl`
+
+### Running a Spell From a Local Grimoire Folder
 
 ```bash
 dw --local-spell <spell_name>
 ```
+
+The above command runs the spell based on your current path location. The spell to run is located at `<current_path>/<spell_name>/src/Main.dwl`
 
 ## Becoming a DataWeave Wizard
 
@@ -105,6 +110,10 @@ dw --new-spell <spell_name>
 ### Step 3: Edit Your Spell
 
 Use [DataWeave VSCode Plugin](https://marketplace.visualstudio.com/items?itemName=MuleSoftInc.dataweave) to develop your script.
+
+```bash
+code <spell_name>
+```
 
 ### Step 4: Try it out
 
