@@ -42,7 +42,7 @@ dw --add-wizard <wizard_name>
 ```
 The wizard's grimoire is going to be cloned at `{user.home}/.dw/grimoires`
 
-:warning: **Do NOT add a wizard you don't trust**
+:warning: **Do NOT add wizards you don't trust**
 
 ## Listing All the Available Spells
 
