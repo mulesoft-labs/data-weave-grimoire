@@ -40,7 +40,7 @@ In order to add a new `wizard` use the DataWeave CLI
 ```bash
 dw --add-wizard <wizard_name>
 ```
-The wizard grimoire is going to be cloned at `{user.home}/.dw/grimoires`
+The wizard's grimoire is going to be cloned at `{user.home}/.dw/grimoires`
 
 :warning: **Do NOT add a wizard you don't trust**
 
