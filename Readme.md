@@ -19,7 +19,7 @@ A `grimoire` is a collection of `spells` from a given `wizard`.
 
 A `spell` is a very simple way to distribute and share a DataWeave transformation.
 
-A `spell` is just executables scripts that can be called from the command-line using the `spell` name.
+A `spell` is just an executable script that can be called from the command line using the `spell`'s name.
 
 ## DataWeave Grimoire
 
