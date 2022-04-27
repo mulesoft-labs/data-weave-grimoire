@@ -135,3 +135,17 @@ dw --eval --spell Playground
 ```
 
 It is going to execute the `Playground` spell that is going to be located in `{user.home}/.dw/grimoires/data-weave-grimoire/Playground/src/Main.dwl`
+
+
+## Contributions Welcome
+
+Contributions to this project can be made through Pull Requests and Issues on the
+[GitHub Repository](https://github.com/mulesoft-labs/data-weave-grimoire).
+
+Before creating a pull request review the following:
+
+* [LICENSE](LICENSE.txt)
+* [SECURITY](SECURITY.md)
+* [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md)
+
+When you submit your pull request, you are asked to sign a contributor license agreement (CLA) if we don't have one on file for you
